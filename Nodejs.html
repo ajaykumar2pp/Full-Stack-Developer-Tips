@@ -25,8 +25,11 @@
 <body>
     <div class="container-fluid">
         <div class="row justify-content-center mt-3">
-            <div class="col-md-2 " >
+            <div class="col-md-2 ">
                 <img src="./Image/nodejs.png" alt="Full stack Image" class="img-fluid" width="150px" height="100px">
+            </div>
+            <div class="col-md-2 ">
+                <a href="./index.html" class="btn btn-primary">Home Page</a>
             </div>
         </div>
         <!-- ***********************   Heading ********************* -->
@@ -39,7 +42,7 @@
                     defined</li>
                 <li> Assuming I have node and npm properly installed on the machine, I would</li>
                 <li>Sample Nodejs Proejct Download</li>
-                <a href="./Dowload_File/Full Stack Developer Tips.zip" class="btn btn-primary btn-sm" download="">Download</a>
+                <a href="./Dowload_File/sample_Proejct.zip" class="btn btn-primary btn-sm" download="">Download</a>
                 <li>Extract the folder.
                 </li>
                 <li>Folder open in Vs code</li>
@@ -52,19 +55,46 @@
             </ol>
         </div>
         <!-- How to deploy Nodejs Proejct On Render -->
-        <h2 class="text-center text-danger mt-4">How to deploy Nodejs Project on Render(Platform cloud web services) </h2>
+        <h2 class="text-center text-danger mt-4">How to Deploy an App to Render from a GitHub Repository </h2>
         <div class="row">
             <div class="col-md-8">
-                <div class="ms-5">
+                <div class="ms-5 mb-5">
                     <!-- <p >First, lets go over the broad strokes:</p> -->
                     <ol class="h5">
                         <li>Create a free account on <a href="https://render.com/" target="_blank">render</a></li>
                         <li>After completing all processes now login to your account.</li>
                         <li>Click on the “Create new app”.</li>
-                        <li>Select GitHub as a method. It will show a “Connect to GitHub” option where we add provide our GitHub repository.</li>
-                        <li>Heroku will take the code and host it. Open the Activity tab and there you can see the progress: </li>
-        
+                        <li>Select GitHub as a method. It will show a “Connect to GitHub” option where we add provide
+                            our GitHub repository.</li>
+                        <li><img src="./Image/sign_up_render.png" alt="render-image" class="img-fluid mb-3 mt-3"
+                                width="500px"> </li>
+                        <li>Once signed up and logged in to your account, you will see a dashboard like this:</li>
+                        <li><img src="./Image/dashboard.png" alt="render-image" class="img-fluid mt-3 mb-3"
+                                width="700px"> </li>
+                        <li>To deploy a Node.js application, click on the <code>New Web Service</code> button under the <code>Web Services</code> 
+                            option. </li>
+                            <li>
+                                You can also click on the <code>New + </code> button displayed in the header just before your profile picture and select <code> Web Service</code>  option.
+                            </li>
+                            <li>
+                                Once clicked, you will see the following screen:
+                            </li>
+                            <li><img src="./Image/new_web_service.png"width="700px" alt=""></li>
+                            <li>Next, click on the  <code>Select repositories</code>  button displayed below the option and select the GitHub repository which you want to deploy.</li>
+                            <li>
+                                Once selected, you will see the following screen displaying the selected repository.
+                            </li>
+                            <li>
+                                <img src="./Image/selected_repository.png" alt="" class="mt-3 mb-3">
+                            </li>
+                            <li>Click on the green <code> Install </code>  button to give access to the selected repository to the Render website.</li>
+                            <li>Once clicked, you will be redirected to your dashboard where you will see your selected repository as shown below:</li>
+                            <li><img src="./Image/connected_repository.png" alt=""class="mt-3 mb-3"></li>
+                            <li>Now, click on the Connect button and you will see the following screen:</li>
+                            <li><img src="./Image/deploy_details.png" alt=""class="mt-3 mb-3" ></li>
+                            <li>Now, you can click on the the <code>  Create Web Service  </code>button to start the deployment process.</li>
                     </ol>
+                    <h1>Thanks for reading!🙂🙂 </h1>
                 </div>
             </div>
         </div>
