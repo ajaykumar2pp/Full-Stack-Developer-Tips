@@ -37,8 +37,8 @@ h3{
 
 /* ************************ Bank Details  ********************************** */
 .bank-text{
-  margin-top: 20px;
-  margin-left: 100px;
+
+  margin-left: 20px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -69,14 +69,5 @@ h3{
 .bank-img{
   margin-top: 50px;
 }
-/* .vl {
-  border-left: 6px solid green;
-  height: 500px;
-}
-border-left: 6px solid green;
-height: 500px;
-position: absolute;
-left: 50%;
-margin-left: -3px;
-top: 0; */
+
 
