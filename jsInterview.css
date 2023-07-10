@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*{
+   font-family: 'Inter', sans-serif; 
+   box-sizing: border-box;
+}
+body{
+   height: 1000vh;
+}
+.text-size{
+   font-size: 18px;
+   font-weight: 500;
+   color: #18254a;
+}
+.question{
+background-color:#ffffff;
+font-weight: 700;
+border-radius: 50%;
+padding: 10px;
+margin: 0px 10px;
+}
+.bg-pre{
+   background:#2d2d2d;
+ white-space: pre;
+ overflow-x: scroll;
+}

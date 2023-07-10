@@ -5,19 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
-    <link rel="manifest" href="./Favicon/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/x-icon" href="/Image/js (1).png">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- CSS style add  -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./jsInterview.css">
     <title>Full Stack Developer Tips</title>
 </head>
 
@@ -37,9 +31,19 @@
               <li class="nav-item">
                 <a class="nav-link bank-text" aria-current="page" href="./PakageInstall.html">Project Create</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link bank-text" href="./Nodejs.html">Nodejs Install</a>
+                  <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle bank-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Interviews
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./interview.html">JavaScript</a></li>
+                  <li><a class="dropdown-item" href="https://nodejs-mcq.netlify.app/">Node Js MCQ</a></li>
+                  <li><a class="dropdown-item" href="https://operating-system-mcq.netlify.app/">Operating System MCQ</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </li>
+             
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle bank-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  MCQ
@@ -52,25 +56,160 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link bank-text" href="./interview.html">Interview</a>
+             <li class="nav-item">
+                <a class="nav-link bank-text" href="./Nodejs.html">Nodejs Install</a>
               </li>
             </ul>
     
           </div>
         </div>
       </nav>
-    
-
-  
     </div>
+    <!-- Heading JavaScript Interview  -->
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12 bg-primary py-3">
+              <h2 class="d-flex justify-content-center text-3xl text-white font-semibold">Top JavaScript Interview
+                  Questions & Answers</h2>
+          </div>
+      </div>
+  </div>
+
+  <!-- Questions Starts  -->
+  <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header text-size">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="true" class="text-size"
+                              aria-controls="collapseOne">
+                              <span class="question">Q.1</span> <span class="text-size">
+                                  What is NaN in JavaScript?
+                              </span>
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              NaN, or Not a Number, compares unequal to numbers. It indicates an error condition for a
+                              function that must return a valid number. We see NaN when a string or anything else is
+                              converted into a number.
+                          </div>
+                      </div>
+                  </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+              </div>
+          </div>
+      </div>
+      <!-- ************************************ 2th ************************** -->
+      <div class="row mt-4">
+          <div class="col-md-12">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <span class="question">Q.2</span> <span class="text-size"> What is prototype design
+                                  pattern ? </span>
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                              The prototype design pattern, also known as a prototype or property pattern, is used to
+                              produce different objects and prototypes replicated from a template with a value. So, as
+                              the name suggests, this design pattern is used to create prototypes. <br> <br>
+
+                              One great example of where a prototype design pattern can come in handy is a business
+                              object with parameters matching the default setting of the database. The prototype
+                              object stores the default setting of the newly introduced business object. <br> <br>
 
 
+                              This pattern is rarely used in traditional languages but is popular for the development
+                              of new objects and templates in JS, a prototypal language.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- ************************************ 3th ************************** -->
+      <div class="row mt-4">
+          <div class="col-md-12">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#thirdquestion" aria-expanded="false" aria-controls="thirdquestion">
+                              <span class="question">Q.3</span> <span class="text-size">Explain the difference between
+                                  '==' & '===' operators
+                                  ?</span>
+                          </button>
+                      </h2>
+                      <div id="thirdquestion" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                              Both ‘==’ and ‘==== operators are used for comparison, but there are a few differences
+                              between the two. <br><br>
+
+                              ‘==’ is used to compare values while ‘===’ is used to compare values along with data
+                              types of variables. <br><br>
+
+                              ‘==’ compares variables through type correction. So, if you compare a string with a
+                              numeric literal, it will support it. However, ‘===’ doesn’t support it as it checks the
+                              values and data types of two variables. So, if the variables are not of the same type,
+                              it will return false. <br><br>
+
+                              Many programming languages support ‘==’ but ‘===’ is supported by limited programming
+                              languages, JavaScript is one of them.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- ************************************ 4th ************************** -->
+      <div class="row mt-4">
+          <div class="col-md-12">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#fourquestion" aria-expanded="false" aria-controls="fourquestion">
+                              <span class="question">Q.4</span> <span class="text-size">Explain the concept of currying in JavaScript ?</span>
+                          </button>
+                      </h2>
+                      <div id="fourquestion" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                              In JavaScript, currying is a special feature that allows you the change the way to invoke a method. When a function of an argument is changed into functions of one or more arguments, it is known as currying.  <br><br>
+
+                              So, it eagles you to concert a specific function with y arguments into y functions with one or less than one argument. Please remember currying doesn’t change the working of functions but only changes the way it is invoked. <br>
+                              <kbd class="mb-2">Example</kbd>  <br> <br>
+                              <pre class="bg-pre">
+                                  <code class="text-white">
+                                      function add (a) {
+                                          return function(b){
+                                            return a + b;
+                                          }
+                                        }
+                                        add(3)(4)
+                                  </code>
+                              </pre>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
