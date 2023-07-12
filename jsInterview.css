@@ -20,6 +20,7 @@ padding: 10px;
 margin-right: 10px;
 }
 .bg-pre{
+   padding: 8px;
    background:#2d2d2d;
  white-space: pre-line;
  overflow-x: scroll;
