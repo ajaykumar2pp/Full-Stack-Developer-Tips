@@ -9,203 +9,663 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- CSS style add  -->
     <link rel="stylesheet" href="./jsInterview.css">
     <title>Full Stack Developer Tips</title>
 </head>
 
-<body> 
+<body>
     <!-- ************************  Navbar  **************************** -->
     <div class="container-fluid">
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
-        <div class="container">
-          <a class="navbar-brand internship h3" href="./index.html">Full Stack Web Developer</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link bank-text" aria-current="page" href="./PakageInstall.html">Project Create</a>
-              </li>
-                  <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle bank-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Interviews
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./interview.html">JavaScript</a></li>
-                  <li><a class="dropdown-item" href="https://nodejs-mcq.netlify.app/">Node Js MCQ</a></li>
-                  <li><a class="dropdown-item" href="https://operating-system-mcq.netlify.app/">Operating System MCQ</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-             
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle bank-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 MCQ
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://reactjs-mcq-ajay.netlify.app/">React Js MCQ</a></li>
-                  <li><a class="dropdown-item" href="https://nodejs-mcq.netlify.app/">Node Js MCQ</a></li>
-                  <li><a class="dropdown-item" href="https://operating-system-mcq.netlify.app/">Operating System MCQ</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-             <li class="nav-item">
-                <a class="nav-link bank-text" href="./Nodejs.html">Nodejs Install</a>
-              </li>
-            </ul>
-    
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+            <div class="container">
+                <a class="navbar-brand internship h3" href="./index.html">Full Stack Web Developer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link bank-text" aria-current="page" href="./PakageInstall.html">Project
+                                Create</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle bank-text" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Interviews
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./interview.html">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="https://nodejs-mcq.netlify.app/">Node Js MCQ</a></li>
+                                <li><a class="dropdown-item" href="https://operating-system-mcq.netlify.app/">Operating
+                                        System MCQ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle bank-text" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                MCQ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://reactjs-mcq-ajay.netlify.app/">React Js
+                                        MCQ</a></li>
+                                <li><a class="dropdown-item" href="https://nodejs-mcq.netlify.app/">Node Js MCQ</a></li>
+                                <li><a class="dropdown-item" href="https://operating-system-mcq.netlify.app/">Operating
+                                        System MCQ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bank-text" href="./Nodejs.html">Nodejs Install</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
     </div>
     <!-- Heading JavaScript Interview  -->
     <div class="container-fluid">
-      <div class="row">
-          <div class="col-md-12 bg-primary py-3">
-              <h2 class="d-flex justify-content-center text-3xl text-white font-semibold">Top JavaScript Interview
-                  Questions & Answers</h2>
-          </div>
-      </div>
-  </div>
+        <div class="row">
+            <div class="col-md-12 bg-primary py-3">
+                <h2 class="d-flex justify-content-center text-3xl text-white font-semibold">Top JavaScript Interview
+                    Questions & Answers</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center mt-4">
+                    <a href="./advance.html"
+                        class="fs-5 text-decoration-none list-group-item list-group-item-primary opacity-100 active px-3 py-2 rounded-1"
+                        aria-current="true">Advance JS</a>
 
-  <!-- Questions Starts  -->
-  <div class="container mt-5">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                      <h2 class="accordion-header text-size">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapseOne" aria-expanded="true" class="text-size"
-                              aria-controls="collapseOne">
-                              <span class="question">Q.1</span> <span class="text-size">
-                                  What is NaN in JavaScript?
-                              </span>
-                          </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show"
-                          data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                              NaN, or Not a Number, compares unequal to numbers. It indicates an error condition for a
-                              function that must return a valid number. We see NaN when a string or anything else is
-                              converted into a number.
-                          </div>
-                      </div>
-                  </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-4">
+            <div class="d-flex justify-content-evenly mt-4">
+                <a href="./beginner.html"
+                    class="fs-5 text-decoration-none list-group-item list-group-item-danger opacity-75 active px-3 py-2 rounded-1"
+                    aria-current="true">Intermediate JS</a>
 
+            </div>
+        </div> -->
+            <!-- <div class="col-md-4">
+            <div class="d-flex justify-content-evenly mt-4">
+                <a href="./js-interview.html"
+                    class="fs-5 text-decoration-none list-group-item list-group-item-danger opacity-75 active px-3 py-2 rounded-1"
+                    aria-current="true">Advance JS</a>
 
-              </div>
-          </div>
-      </div>
-      <!-- ************************************ 2th ************************** -->
-      <div class="row mt-4">
-          <div class="col-md-12">
-              <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                      <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              <span class="question">Q.2</span> <span class="text-size"> What is prototype design
-                                  pattern ? </span>
-                          </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse">
-                          <div class="accordion-body">
-                              The prototype design pattern, also known as a prototype or property pattern, is used to
-                              produce different objects and prototypes replicated from a template with a value. So, as
-                              the name suggests, this design pattern is used to create prototypes. <br> <br>
-
-                              One great example of where a prototype design pattern can come in handy is a business
-                              object with parameters matching the default setting of the database. The prototype
-                              object stores the default setting of the newly introduced business object. <br> <br>
-
-
-                              This pattern is rarely used in traditional languages but is popular for the development
-                              of new objects and templates in JS, a prototypal language.
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- ************************************ 3th ************************** -->
-      <div class="row mt-4">
-          <div class="col-md-12">
-              <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                      <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#thirdquestion" aria-expanded="false" aria-controls="thirdquestion">
-                              <span class="question">Q.3</span> <span class="text-size">Explain the difference between
-                                  '==' & '===' operators
-                                  ?</span>
-                          </button>
-                      </h2>
-                      <div id="thirdquestion" class="accordion-collapse collapse">
-                          <div class="accordion-body">
-                              Both ‘==’ and ‘==== operators are used for comparison, but there are a few differences
-                              between the two. <br><br>
-
-                              ‘==’ is used to compare values while ‘===’ is used to compare values along with data
-                              types of variables. <br><br>
-
-                              ‘==’ compares variables through type correction. So, if you compare a string with a
-                              numeric literal, it will support it. However, ‘===’ doesn’t support it as it checks the
-                              values and data types of two variables. So, if the variables are not of the same type,
-                              it will return false. <br><br>
-
-                              Many programming languages support ‘==’ but ‘===’ is supported by limited programming
-                              languages, JavaScript is one of them.
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- ************************************ 4th ************************** -->
-      <div class="row mt-4">
-          <div class="col-md-12">
-              <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                      <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#fourquestion" aria-expanded="false" aria-controls="fourquestion">
-                              <span class="question">Q.4</span> <span class="text-size">Explain the concept of currying in JavaScript ?</span>
-                          </button>
-                      </h2>
-                      <div id="fourquestion" class="accordion-collapse collapse">
-                          <div class="accordion-body">
-                              In JavaScript, currying is a special feature that allows you the change the way to invoke a method. When a function of an argument is changed into functions of one or more arguments, it is known as currying.  <br><br>
-
-                              So, it eagles you to concert a specific function with y arguments into y functions with one or less than one argument. Please remember currying doesn’t change the working of functions but only changes the way it is invoked. <br>
-                              <kbd class="mb-2">Example</kbd>  <br> <br>
-                              <pre class="bg-pre">
-                                  <code class="text-white">
-                                      function add (a) {
-                                          return function(b){
-                                            return a + b;
-                                          }
-                                        }
-                                        add(3)(4)
-                                  </code>
-                              </pre>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+            </div>
+        </div> -->
+        </div>
+    </div>
+    <!-- Questions Starts  -->
+    <div class="container mt-5 mb-5">
+        <!-- ******************************** 1st ************************** -->
+        <div class="row ">
+            <div class="col-md-12 ">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-size">
+                            <button class="accordion-button collapseOne" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" class="text-size"
+                                aria-controls="collapseOne">
+                                <span class="question">Q.1</span> <span class="text-size">
+                                    List some features of Javascript.
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                The following features are available in Javascript- <br>
+                                <li>Interpreted Language</li>
+                                <li>Cross Platform</li>
+                                <li>Object-Oriented Scripting Language</li>
+                                <li>Asynchronous Processing</li>
+                            </div>
+                        </div>
+                    </div>
 
 
- 
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 2th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="question">Q.2</span> <span class="text-size"> Differentiate between slice()
+                                    and splice() ?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <table class="table  table-striped  table-bordered border-secondary mt-3">
+                                    <thead class="text-center">
+                                        <tr class="table-dark">
+                                            <th scope="col">#</th>
+                                            <th scope="col text-center">Slice() Method</th>
+                                            <th scope="col text-center">Splice() Method</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>It doesn't modify the original array(immutable).
+                                            </td>
+                                            <td>Modifies the original array(mutable).</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Returns the subset of the original array.</td>
+                                            <td>Its returns the deleted elements as an array.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>It is used to pick the element from the array.</td>
+                                            <td>It is used to insert or delete elements from an array.</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 3th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#thirdquestion" aria-expanded="false" aria-controls="thirdquestion">
+                                <span class="question">Q.3</span> <span class="text-size">
+                                    Name the company which developed Javascript ?
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="thirdquestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Netscape developed Javascript.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 4th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fourquestion" aria-expanded="false" aria-controls="fourquestion">
+                                <span class="question">Q.4</span> <span class="text-size">
+                                    In JavaScript, how do you create an object ?
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="fourquestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Using the object literal, you can create an object like seen below: <br>
+                                <pre class="bg-pre mt-3">
+                                <code class="text-white">
+                                    var emp = {
+                                        name: "John",
+                                        age: 19
+                                        }; 
+                                </code>
+                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 5th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fivequestion" aria-expanded="false" aria-controls="fivequestion">
+                                <span class="question">Q.5</span> <span class="text-size">
+                                    Define undeclared and undefined variables ?
+
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="fivequestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <b>Undeclared variables</b> are not declared and don't exist in a program. A runtime
+                                error occurs if the software tries to read the value of an undefined variable. <br><br>
+
+                                <b>Variables declared</b> in the program but do not have a value are considered
+                                undefined variables. An undefined value is returned if the software tries to read the
+                                value of an undefined variable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 6th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sixquestion" aria-expanded="false" aria-controls="sixquestion">
+                                <span class="question">Q.6</span> <span class="text-size"> Differentiate between Windows
+                                    & documents in JavaScript
+                                    ?
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="sixquestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <table class="table  table-striped  table-bordered border-secondary mt-3">
+                                    <thead class="text-center">
+                                        <tr class="table-dark">
+                                            <th scope="col">#</th>
+                                            <th scope="col text-center">Windows</th>
+                                            <th scope="col text-center">Document</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>The window of Javascript is a global object which holds variables,
+                                                functions, locations, and history.
+                                            </td>
+                                            <td>This also comes under the window and can be understood as the property
+                                                of the window.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>It is the representation of the user’s browser window and represents the
+                                                content of the webpage.</td>
+                                            <td>It is the representation of any HTML document that is loaded on the
+                                                browser.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Global objects, functions, and variables of JavaScript are part of the
+                                                window object.</td>
+                                            <td>The HTML tags, elements, and their attributes are members of the
+                                                Document.</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 7th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sevenquestion" aria-expanded="false" aria-controls="sevenquestion">
+                                <span class="question">Q.7</span> <span class="text-size">
+                                    Define arrow functions in JavaScript ?
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="sevenquestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                JavaScript functions are written using arrow functions, which are clear and concise. An
+                                arrow function's general syntax is as follows:
+                                <br><br>
+                                syntax: <br>
+                                <pre class="bg-pre mt-3">
+                                <code class="text-white">
+                                    const welcome = () => {
+                                        console.log("welcome to Coder Lite");
+                                      };
+                                </code>
+                            </pre>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 8th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#eightquestion" aria-expanded="false" aria-controls="eightquestion">
+                                <span class="question">Q.8</span> <span class="text-size"> What is the difference
+                                    between undefined and null ?
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="eightquestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                The variable would be undefined when we declare a variable and do not give any value. If
+                                we want to have a variable with no value, we can assign a null value. Undefined
+                                represents no value, whereas null is a value.
+                                <pre class="bg-pre mt-3">
+                                <code class="text-white">
+                                    var a;
+                                    var b= null;  
+                                </code>
+                            </pre>
+                                Here a is undefined, and b is null.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ************************************ 9th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mvcquestion" aria-expanded="false" aria-controls="mvcquestion">
+                                <span class="question">Q.9</span> <span class="text-size">
+                                    What is Variable Scope in JS ?
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="mvcquestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                The scope of the variable determines the variable accessibility in a particular
+                                function. <br><br>
+
+                                There are two types of Variable Scopes in javascript: <br>
+                                <li>Local Scope</li>
+                                <li>Global Scope.
+                                </li> <br>
+                                <b>Local Scope: </b> In this scope, the visibility or accessibility of a variable is
+                                limited to a specific function. Let’s understand it with an example:
+                                <pre class="bg-pre mt-3">
+                                <code class="text-white">
+                                    function ninjas() {
+                                        var course = "Web Development";  // course is limited to ninjas because it is a local variable
+                                      }
+                                      function dev()
+                                      {
+                                      //dev cannot access the course variable because it is local to the ninjas() function
+                                      }
+                                </code>
+                            </pre> <br>
+
+                                <b> Global Scope:</b> We define a variable outside the function accessible for all other
+                                functions in this scope. This sets the variable scope global. Let’s understand it with
+                                an example: <br>
+                                <pre class="bg-pre mt-3">
+                                <code class="text-white">
+                                    var course = "Web Development";  // It is a global variable
+                                    function ninjas() {
+                                    var getninjas = course;
+                                    }
+                                    function dev()
+                                    {
+                                    var getninjas = course;
+                                    }
+                                </code>
+                            </pre>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 10th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#authquestion" aria-expanded="false" aria-controls="authquestion">
+                                <span class="question">Q.10</span> <span class="text-size">
+                                    Define undeclared and undefined variables ?
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="authquestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Undeclared variables are not declared and don't exist in a program. A runtime error
+                                occurs if the software tries to read the value of an undefined variable. <br><br>
+
+                                Variables declared in the program but do not have a value are considered undefined
+                                variables. An undefined value is returned if the software tries to read the value of an
+                                undefined variable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 11th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fetchquestion" aria-expanded="false" aria-controls="fetchquestion">
+                                <span class="question">Q.11</span> <span class="text-size">
+                                    How is JavaScript code debugged ?
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="fetchquestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                By pressing the appropriate key, typically the F12 key, all contemporary web browsers,
+                                including Chrome, Firefox, and others, feature an integrated debugger that can be used
+                                anytime. The debugging tools provide users with a number of functions.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 11th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#underquestion" aria-expanded="false" aria-controls="underquestion">
+                                <span class="question">Q.11</span> <span class="text-size">Define ways to remove
+                                    duplicates from the Javascript array ?
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="underquestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                The different ways to remove duplicates in Javascript are mentioned below: <br><br>
+
+                                <b> Filter method:</b> <br>
+                                Three arguments are specified to call the filter() function. These are the array,
+                                element in use, and element index. <br><br>
+
+
+                                <b> For loop:</b> <br>
+                                All the recurring elements are kept in an empty array.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************ 12th ************************** -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#operationquestion" aria-expanded="false"
+                                aria-controls="operationquestion">
+                                <span class="question">Q.12</span> <span class="text-size">
+                                    Define the symbols used for comments in Javascript ?
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="operationquestion" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                The symbols for comments are given below: <br>
+                                <pre class="bg-pre mt-3">
+                            <code class="text-white">
+                                // for Single line comments and
+
+                                /* Multi
+                                Line
+                                Comment
+                                */
+                            </code>
+                        </pre>
+                                <h5>Note that you can use an arrow function to define an IIFE:</h5> <br>
+                                <b>Example 1 :</b>
+                                <pre class="bg-pre mt-3">
+                            <code class="text-white">
+                                (function(){
+                                    let x="Ajay"
+                                    console.log(x) // Ajay
+                                  })();
+                            </code>
+                        </pre>
+                                <b>Example 2 :</b>
+                                <pre class="bg-pre mt-3">
+                            <code class="text-white">
+                                (function(a,b){
+                                    console.log(a+b)  // 30
+                                    return a + b;
+                                })(10,20);
+                            </code>
+                        </pre>
+                                <b>Example 3 :</b>
+                                <pre class="bg-pre mt-3">
+                            <code class="text-white">
+                                (function() {
+                                    var counter = 0;
+                                
+                                    function add(a, b) {
+                                        return a + b;
+                                    }
+                                
+                                    console.log(add(10,20)); // 30
+                                }());
+                            </code>
+                        </pre>
+                                <b>Example 4 :</b>
+                                <pre class="bg-pre mt-3">
+                            <code class="text-white">
+                                (function() {
+                                    var counter = 0;
+                                
+                                    function add(a, b) {
+                                        return a + b;
+                                    }
+                                
+                                    console.log(add(10,20)); // 30
+                                }());
+                            </code>
+                        </pre>
+                                <b>Important Point </b> <br>
+                                <li>
+                                    IIFE follow their own scope like any other function/variable in JavaScript.
+                                </li>
+                                <li>The part of the name immediately invoked is sometimes confusing to new developers as
+                                    they expect the IIFE to execute irrespective of function scope, this is wrong. For
+                                    example, let us take the following example where the IIFE is defined within a
+                                    function and will only be immediately invoked if we call it the Parent Function.
+                                </li>
+                                <b>Example 5 :</b>
+                                <pre class="bg-pre mt-3">
+                            <code class="text-white">
+                                function myFunc()
+                                {
+                                    console.log("Welcome to");  // Welcome to
+                                    // This will be executed after executing the previous log.
+                                    (function() { 
+                                        console.log("Ajay Kumar"); // Ajay Kumar
+                                    })();
+                                    console.log("Hi There!");  // Hi There!
+                                }
+                                  
+                                
+                                myFunc();
+                            </code>
+                        </pre>
+                                <li>1. IIFEs have their own scope i.e. the variables you declare in the Function
+                                    Expression will not be available outside the function.</li>
+                                <li>2. Similarly to other functions IIFEs can also be named or anonymous, but even if an
+                                    IIFE does have a name it is impossible to refer/invoke it.</li>
+                                <li>3. IIFEs can also have parameters. For example, </li>
+                                <b>Example 6 :</b>
+                                <pre class="bg-pre mt-3">
+                            <code class="text-white">
+                                // Declaring the parameter required.
+                                (function(dt) {
+                                 console.log(dt.toLocaleTimeString());  // 6:12:57 PM
+                                 // Passing the Parameter.
+                             })(new Date());
+                            </code>
+                        </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

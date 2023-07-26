@@ -25,3 +25,14 @@ margin-right: 10px;
  white-space: pre-line;
  overflow-x: scroll;
 }
+.internship{
+   color: #181b38;
+   cursor: pointer;
+   
+ }
+ .bank-text{
+
+   margin-left: 20px;
+   font-size: 20px;
+   font-weight: 500;
+ }
