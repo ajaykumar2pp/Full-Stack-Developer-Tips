@@ -12,7 +12,7 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- CSS style add  -->
     <link rel="stylesheet" href="./jsInterview.css">
-    <title>JavaScript Interview</title>
+    <title>Coding Ninjas Placement Cell</title>
 </head>
 
 <body>
@@ -42,6 +42,7 @@
                   <li><a class="dropdown-item" href="./advance.html">Advance JS</a></li>
                   <li><a class="dropdown-item" href="./graph-ql-interview.html">GraphQL</a></li>
                   <li><a class="dropdown-item" href="./react-interview.html">React JS</a></li>
+                  <li><a class="dropdown-item" href="./placement-cell.html">Placement Cell</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
@@ -73,131 +74,40 @@
         <div class="row">
             <div class="col-md-12 ">
                 <h2 class="d-flex justify-content-center text-3xl text-white font-semibold bg-danger py-3 opacity-75">
-                    Top MNC JavaScript Interview
-                    Questions & Answers</h2>
+                 Coding Ninjas Placement Cell </h2>
 
             </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="d-flex justify-content-center mt-4">
-                    <a href="./js-interview.html"
-                        class="fs-5 text-decoration-none list-group-item list-group-item-danger opacity-75 active px-3 py-2 rounded-1"
-                        aria-current="true">Beginner JS</a>
-
-                </div>
-            </div>
-            <!-- <div class="col-md-4">
-                <div class="d-flex justify-content-evenly mt-4">
-                    <a href="./beginner.html"
-                        class="fs-5 text-decoration-none list-group-item list-group-item-danger opacity-75 active px-3 py-2 rounded-1"
-                        aria-current="true">Intermediate JS</a>
-
-                </div>
-            </div> -->
-            <!-- <div class="col-md-4">
-                <div class="d-flex justify-content-evenly mt-4">
-                    <a href="./js-interview.html"
-                        class="fs-5 text-decoration-none list-group-item list-group-item-danger opacity-75 active px-3 py-2 rounded-1"
-                        aria-current="true">Advance JS</a>
-
-                </div>
-            </div> -->
-        </div>
-    </div>
+    
     <!-- Questions Starts  -->
     <div class="container mt-5 mb-5">
         <!-- ******************************** 1st ************************** -->
-        <div class="row ">
+        <div class="row mt-4">
             <div class="col-md-12">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header text-size">
-                            <button class="accordion-button collapseOne" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" class="text-size"
-                                aria-controls="collapseOne">
-                                <span class="question">Q.1</span> <span class="text-size">
-                                    What is Shallow Copy in JavaScript ?
-                                </span>
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                                <span class="question">Q.1</span> <span class="text-size"> Rate yourself out of 5 in MERN or MEAN FullStack ? ( 5 being excellent, I being not so confident ) </span>
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div id="collapseTwo1" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <span class="fw-bold">Shallow copy:</span> In the case of shallow copy when we copy the
-                                original object into the clone object then the clone object has the copy of the memory
-                                address of the original object. Means both points to the same memory address. <br> <br>
-
-                                Both original object and cloned object internally point to the same referenced object.
-                                Since they point to the same memory address so if we changed the cloned object then
-                                changes would be reflected back to the original object because they point to the same
-                                memory address.
-                                <br><br>
-                                Both spread (...) and Object.assign() perform a shallow copy while the JSON methods
-                                carry a deep copy. <br> <br>
-                                Using Object.assign operator: It takes the two parameters:
-                                <li>Empty object and</li>
-                                <li>Original object</li>
-
-
-                                <pre class="bg-pre mt-3">
-                                    <code class="text-white">
-                                        let person = {
-                                            name: "Ajay",
-                                            lastname: "Kumar",
-                                            address:{
-                                              city:"Haridwar",
-                                              state:"Uttarakhand",
-                                              country: "India",
-                                            }
-                                          };
-                                          
-                                          let person2 = Object.assign({}, person);
-                                          person2.name="Vijay"
-                                          person2.address.city = "Roorkee";
-                                          person2.address.state="U.P."
-                                          
-                                          console.log("person 1 name is", person.address); 
-                                          
-                                          // ***************   Output 1 Person  **************//
-
-                                          {
-                                            firstName: 'Ajay',
-                                            lastName: 'Kumar',
-                                            address: {
-                                                city: 'Roorkee',
-                                                state: 'U.P.',
-                                                country :"India"
-                                            }
-                                          
-                                          console.log("person 2 name is ", person2.address); 
-
-                                          // ***************   Output 2 Person  **************//
-
-                                          {
-                                            firstName: 'Vijay',
-                                            lastName: 'Kumar',
-                                            address: {
-                                                city: 'Roorkee',
-                                                state: 'U.P.',
-                                                country :"India"
-                                            }
-                                        }
-                                          
-                                    </code>
-                                </pre>
-                                In this example <br>
-                                <li>First, create a new object named person.</li>
-                                <li>Second, clone the person object using the Object.assign() method.</li>
-                                <li>Third, change the first name and address information of the copiedPerson object.
-                                </li>
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item  list-group-item-action py-3">A have a 5 out of 4 rating in the MERN</li>
+                                    <li class="list-group-item list-group-item-action py-3">According to the MERN, my rating is four.</li>
+                                    <li class="list-group-item list-group-item-action py-3">My rating is four.</li>
+                                    <li class="list-group-item list-group-item-action py-3">Currently, I am rated four in the MERN.</li>
+                                    <li class="list-group-item list-group-item-action py-3">The MERN gives me a five out of four rating.</li>
+                                    <li class="list-group-item list-group-item-action py-3">There is four on my MERN rating .</li>
+                                    <li class="list-group-item list-group-item-action py-3">In the MERN, I have four-star rating</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -209,30 +119,20 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <span class="question">Q.2</span> <span class="text-size"> How to copy the text to the
-                                    clipboard in JavaScript ?</span>
+                                <span class="question">Q.2</span> <span class="text-size">Are you ready to relocate to the Chennai ?</span>
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <pre class="bg-pre">
-                                    <code class="text-white">
-                                       
-                                        function Clipboard() {
-                                            /* Get the text field */
-                                            let copyText = document.getElementById("IdOfTextToCopy");
-                                            
-                                            /* Select the text field */
-                                            copyText.select();
-                                            
-                                            /* Copy the text inside the text field */
-                                            document.execCommand("copy");
-                                                
-                                            /* Use below command to access the value of copied text */
-                                            console.log(copyText.value);
-                                        }
-                                    </code>
-                                </pre>
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item  list-group-item-action py-3">Yes, I am ready to relocate to the Chennai.</li>
+                                    <li class="list-group-item list-group-item-action py-3">Yes, I am willing to relocate to Channai.</li>
+                                    <li class="list-group-item list-group-item-action py-3">Certainly, I am interested in moving to Chennai.</li>
+                                    <li class="list-group-item list-group-item-action py-3">It would be great to relocate to Chennai.</li>
+                                    <li class="list-group-item list-group-item-action py-3">The Chennai area is a good fit for me, and I am ready to move there.</li>
+                                    <li class="list-group-item list-group-item-action py-3">Chennai is a great place for me to live, so I am ready to relocate there.</li>
+                                    
+                                </ol>
                             </div>
                         </div>
                     </div>
@@ -248,108 +148,22 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#thirdquestion" aria-expanded="false" aria-controls="thirdquestion">
                                 <span class="question">Q.3</span> <span class="text-size">
-                                    What is Deep Copy in JavaScript ?
+                                  Are you ready to join immediately ?
                                 </span>
                             </button>
                         </h2>
                         <div id="thirdquestion" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                Deep clone is a technique that is used to duplicate everything whenever we are cloning
-                                arrays and objects in JavaScript in order to avoid data loss. <br><br>
-                                To copy an object in JavaScript, you have three options: <br> <br>
-                                1. Use the spread (...) syntax <br> <br>
-                                2. Use the Object.assign() method <br> <br>
-                                3. Use the JSON.stringify() and JSON.parse() methods
-                                <pre class="bg-pre mt-3">
-                                    <code class="text-white">
-                                        const person={
-                                            name:"Ajay",
-                                            lastname:"Kumar"
-                                        }
-                                        
-                                        // using spread operator 
-                                        let p1 ={
-                                            ...person
-                                        }
-                                        console.log("spread",p1)
-                                        
-                                        //using object assign
-                                        let p2=Object.assign({},person)
-                                        console.log("object assign",p2)
-                                        
-                                        //using JSON 
-                                        let p3=   JSON.parse(JSON.stringify(person))
-                                        console.log("JSON",p3)
-                                    </code>
-                                </pre>
-                                or
-                                <pre class="bg-pre mt-3">
-                                    <code class="text-white">
-                                        var person = {
-                                            name: "Ajay",
-                                            lastname: "Kumar",
-                                          };
-                                          
-                                          var person2 = Object.assign({}, person);
-                                          
-                                          person.name = "Vijay";
-                                          
-                                          console.log("person 1 name is", person.name); // Vijay
-                                          
-                                          console.log("person 2 name is ", person2.name); //Ajay
-                                    </code>
-                                </pre>
-                                <pre class="bg-pre mt-3">
-                                    <code class="text-white">
-                                        let counter = 1;
-                                        let copiedCounter = counter;
-                                        copiedCounter = 2;
-                                        
-                                        console.log(counter);  //1
-                                        
-                                    </code>
-                                </pre>
-                                However, if you use the assignment operator for a reference value, it will not copy the
-                                value.
-
-                                <pre class="bg-pre mt-3">
-                                    <code class="text-white">
-                                        let person = {
-                                            firstName: 'Ajay',
-                                            lastName: 'Kumar'
-                                        };
-                                        let copiedPerson = person;
-                                        
-                                        copiedPerson.firstName = 'Vijay';
-                                        console.log(person); 
-                                        
-                                         Output 
-                                         { firstName: 'Vijay', lastName: 'Kumar' }
-                                    </code>
-                                </pre>
-                                Deep Copy Example :
-                                <pre class="bg-pre mt-3">
-                                    <code class="text-white">
-                                        let person = {
-                                            name: "Ajay",
-                                            lastname: "Kumar",
-                                            address:{
-                                              city:"Haridwar",
-                                              state:"Uttarakhand",
-                                              country:"India"
-                                            }
-                                          };
-                                          
-                                          let person2 = JSON.parse(JSON.stringify(person))
-                                          
-                                          person2.address.city = "Roorkee";
-                                          person2.address.state="U.P."
-                                          
-                                          console.log("person 1 name is", person.address); // {city: 'Haridwar', state: 'Uttarakhand',country:"India"}
-                                          
-                                          console.log("person 2 name is ", person2.address); // {city: 'Roorkee', state: 'U.P.',country:"India"}
-                                    </code>
-                                </pre>
+              
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item  list-group-item-action py-3">Yes, I am ready to join as soon as possible.</li>
+                                    <li class="list-group-item list-group-item-action py-3">I am available right away to join .</li>
+                                    <li class="list-group-item list-group-item-action py-3">I am available to start immediately.</li>
+                                    <li class="list-group-item list-group-item-action py-3">Definitely, I am ready to start right away.</li>
+                                    <li class="list-group-item list-group-item-action py-3">If would like to join me immediately, I am ready to do so.</li>
+                               
+                                    
+                                </ol>
                             </div>
                         </div>
                     </div>
@@ -365,35 +179,21 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#fourquestion" aria-expanded="false" aria-controls="fourquestion">
                                 <span class="question">Q.4</span> <span class="text-size">
-                                    What is Function type ?
+                                    Do you have Internship Experience ?
                                 </span>
                             </button>
                         </h2>
                         <div id="fourquestion" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                In JavaScript, all functions are objects. They are the instances of the Function type.
-                                Because functions are objects, they have properties and methods like other objects.
-
-                                <br><br>
-                                Functions properties : <br><br>
-                                Each function has two important properties: length and prototype.
-                                <li>The length property determines the number of named arguments specified in the
-                                    function declaration.</li>
-                                <li>The length property determines the number of named arguments specified in the
-                                    function declaration.</li>
-                                <li>A function also has three important methods: call(), apply(), and bind().</li> <br>
-                                Example :
-                                <pre class="bg-pre mt-3">
-                                    <code class="text-white">
-                                        function add(x, y) {
-                                            return x + y;
-                                        }
-                                        
-                                        console.log(add.length); // 2
-                                        console.log(add.prototype); // Object{}
-                                    </code>
-                                </pre>
-
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item  list-group-item-action py-3">Yes, I am ready to join as soon as possible.</li>
+                                    <li class="list-group-item list-group-item-action py-3">I am available right away to join .</li>
+                                    <li class="list-group-item list-group-item-action py-3">I am available to start immediately.</li>
+                                    <li class="list-group-item list-group-item-action py-3">Definitely, I am ready to start right away.</li>
+                                    <li class="list-group-item list-group-item-action py-3">If would like to join me immediately, I am ready to do so.</li>
+                               
+                                    
+                                </ol>
                             </div>
                         </div>
                     </div>
