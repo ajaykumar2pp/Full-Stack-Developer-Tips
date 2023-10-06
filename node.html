@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/Image/js (1).png">
+    <link rel="icon" type="image/x-icon" href="/Image/node-2.png">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -167,7 +167,8 @@ console.log(`my server start on this port ${PORT}`)
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <span class="question">Q.2</span> <span class="text-size">What is the difference between Express.js and Node.js ?</span>
+                                <span class="question">Q.2</span> <span class="text-size">What is the difference between
+                                    Express.js and Node.js ?</span>
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse">
@@ -203,15 +204,18 @@ console.log(`my server start on this port ${PORT}`)
                                             <th scope="row">Features</th>
                                             <td>Routing, middleware, template engines, etc.</td>
                                             <td>Event-driven, non-blocking I/O, etc.</td>
-                                        </tr><tr>
+                                        </tr>
+                                        <tr>
                                             <th scope="row">Dependencies</th>
                                             <td>Node.js</td>
                                             <td>N/A</td>
-                                        </tr><tr>
+                                        </tr>
+                                        <tr>
                                             <th scope="row">Popularity</th>
                                             <td>Very popular</td>
                                             <td>Very popular</td>
-                                        </tr><tr>
+                                        </tr>
+                                        <tr>
                                             <th scope="row">Examples</th>
                                             <td>GitHub, Uber, Netflix</td>
                                             <td>PayPal, LinkedIn, Walmart</td>
@@ -233,13 +237,54 @@ console.log(`my server start on this port ${PORT}`)
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#thirdquestion" aria-expanded="false" aria-controls="thirdquestion">
                                 <span class="question">Q.3</span> <span class="text-size">
-                                    Name the company which developed Javascript ?
+                                    How do you create a server using Express.js in Node.js?
                                 </span>
                             </button>
                         </h2>
                         <div id="thirdquestion" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                Netscape developed Javascript.
+                                There are a few steps to create a server using Express in Node.js: <br>
+                                a) Write this command in your terminal, to create a nodejs application, because our express server will work inside the node application. <br>
+                                <Strong>Syntax : </Strong> 
+                                <pre class="bg-pre mt-2">
+                                    <code class="text-white">
+                                        npm init
+                                    </code>
+                                </pre>
+                                This will ask you for few configurations about your project you can fill them accordingly, also you can change it later from the package.json file. <br>
+                                <strong>Note : </strong>Use <strong>`npm init -y`</strong> for default initialization <br>
+                                b) Install the Express.js framework as a dependency for our project. Run the this command: 
+                                <pre class="bg-pre mt-2">
+                                    <code class="text-white">
+                                        npm install express
+                                    </code>
+                                </pre>
+                              
+                                c) Set the server to listen to port 8000
+                               
+                                <pre class="bg-pre mt-3">
+                                    <code class="text-white">
+                                        const express = require('express');
+  
+                                        const app = express();
+                                        const PORT = 8000;
+                                          
+                                        app.listen(PORT, (error) =>{
+                                            if(!error)
+                                                console.log(`My server start on this port ${PORT}`)
+                                            else 
+                                                console.log(" Server can't start", error);
+                                            }
+                                        );
+
+                                    </code>
+                                </pre>
+                                d) Step to run the application : 
+                                <pre class="bg-pre mt-2">
+                                    <code class="text-white">
+                                        node index.js
+                                    </code>
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -255,21 +300,47 @@ console.log(`my server start on this port ${PORT}`)
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#fourquestion" aria-expanded="false" aria-controls="fourquestion">
                                 <span class="question">Q.4</span> <span class="text-size">
-                                    In JavaScript, how do you create an object ?
+                                    What is the difference between –save and –save-dev in Node.js ?
                                 </span>
                             </button>
                         </h2>
                         <div id="fourquestion" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                Using the object literal, you can create an object like seen below: <br>
-                                <pre class="bg-pre mt-3">
-                                <code class="text-white">
-                                    var emp = {
-                                        name: "John",
-                                        age: 19
-                                        }; 
-                                </code>
-                            </pre>
+                                <table class="table  table-striped  table-bordered border-secondary mt-3">
+                                    <thead class="text-center">
+                                        <tr class="table-dark">
+                                            <th scope="col text-center">-save</th>
+                                            <th scope="col text-center">-save-dev</th>
+                                            
+
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                       
+                                            <td>The package installed is core dependency.
+                                            </td>
+                                            <td>The package installed is not a core rather development dependency.</td>
+
+                                        </tr>
+                                        <tr>
+                                           
+                                            <td>All core dependency is listed under dependencies in package.json.</td>
+                                            <td>All development dependency is listed under devDependencies in package.json.</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>It will be installed if a third person tries to install or clone your package.</td>
+                                            <td>It will be installed if a third person tries to clone your package.</td>
+                                        </tr>
+                                        <tr>
+                                          
+                                            <td>Example: express, body-parser etc.</td>
+                                            <td>Example: nodemon</td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -285,19 +356,39 @@ console.log(`my server start on this port ${PORT}`)
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#fivequestion" aria-expanded="false" aria-controls="fivequestion">
                                 <span class="question">Q.5</span> <span class="text-size">
-                                    Define undeclared and undefined variables ?
+                                    What is the difference between Synchronous and Asynchronous functions?
 
                                 </span>
                             </button>
                         </h2>
                         <div id="fivequestion" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <b>Undeclared variables</b> are not declared and don't exist in a program. A runtime
-                                error occurs if the software tries to read the value of an undefined variable. <br><br>
+                                <table class="table  table-striped  table-bordered border-secondary mt-3">
+                                    <thead class="text-center">
+                                        <tr class="table-dark">
+                                            <th scope="col text-center">Synchronous function</th>
+                                            <th scope="col text-center">Asynchronous function</th>
+                                            
 
-                                <b>Variables declared</b> in the program but do not have a value are considered
-                                undefined variables. An undefined value is returned if the software tries to read the
-                                value of an undefined variable.
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                       
+                                            <td>These are the function that block the execution of the program whenever an operation is performed. Hence these are also called blocking operations. 
+                                            </td>
+                                            <td>These are the operations that do not block the execution of the program and each command is executed after the previous command even if the previous command has not computed the result.</td>
+
+                                        </tr>
+                                        <tr>
+                                           
+                                            <td>We use these functions to perform lightweight tasks</td>
+                                            <td>We use these functions to perform heavy tasks.</td>
+                                        </tr>
+                                       
+                                       
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -312,51 +403,13 @@ console.log(`my server start on this port ${PORT}`)
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#sixquestion" aria-expanded="false" aria-controls="sixquestion">
-                                <span class="question">Q.6</span> <span class="text-size"> Differentiate between Windows
-                                    & documents in JavaScript
-                                    ?
+                                <span class="question">Q.6</span> <span class="text-size"> What is a module in Node.js ?
                                 </span>
                             </button>
                         </h2>
                         <div id="sixquestion" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <table class="table  table-striped  table-bordered border-secondary mt-3">
-                                    <thead class="text-center">
-                                        <tr class="table-dark">
-                                            <th scope="col">#</th>
-                                            <th scope="col text-center">Windows</th>
-                                            <th scope="col text-center">Document</th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>The window of Javascript is a global object which holds variables,
-                                                functions, locations, and history.
-                                            </td>
-                                            <td>This also comes under the window and can be understood as the property
-                                                of the window.</td>
-
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>It is the representation of the user’s browser window and represents the
-                                                content of the webpage.</td>
-                                            <td>It is the representation of any HTML document that is loaded on the
-                                                browser.</td>
-
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Global objects, functions, and variables of JavaScript are part of the
-                                                window object.</td>
-                                            <td>The HTML tags, elements, and their attributes are members of the
-                                                Document.</td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
+                                In Node.js Application, a Module can be considered as a block of code that provide a simple or complex functionality that can communicate with external application. Modules can be organized in a single file or a collection of multiple files/folders. Modules are useful because of their reusability and ability to reduce the complexity of code into smaller pieces. Some examples of modules are. http, fs, os, path, etc.
                             </div>
                         </div>
                     </div>
