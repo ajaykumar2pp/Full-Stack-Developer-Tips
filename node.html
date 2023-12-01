@@ -425,23 +425,17 @@ console.log(`my server start on this port ${PORT}`)
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#sevenquestion" aria-expanded="false" aria-controls="sevenquestion">
                                 <span class="question">Q.7</span> <span class="text-size">
-                                    Define arrow functions in JavaScript ?
+                                    Could you name three advantages of Node.js ?
                                 </span>
                             </button>
                         </h2>
                         <div id="sevenquestion" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                JavaScript functions are written using arrow functions, which are clear and concise. An
-                                arrow function's general syntax is as follows:
-                                <br><br>
-                                syntax: <br>
-                                <pre class="bg-pre mt-3">
-                                <code class="text-white">
-                                    const welcome = () => {
-                                        console.log("welcome to Coder Lite");
-                                      };
-                                </code>
-                            </pre>
+                               <li>Fast runtime environment</li>
+                               <li>Asynchronous features</li>
+                               <li>Uses caching to reduce loading time</li>
+                               <li>Requires only JavaScript to handle both front-end and back-end development</li>
+                               <li>Support from a large community of Node.js developers</li>
 
                             </div>
                         </div>
@@ -457,23 +451,16 @@ console.log(`my server start on this port ${PORT}`)
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#eightquestion" aria-expanded="false" aria-controls="eightquestion">
-                                <span class="question">Q.8</span> <span class="text-size"> What is the difference
-                                    between undefined and null ?
+                                <span class="question">Q.8</span> <span class="text-size"> Could you name some libraries that developers frequently use with Node.js?
                                 </span>
                             </button>
                         </h2>
                         <div id="eightquestion" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                The variable would be undefined when we declare a variable and do not give any value. If
-                                we want to have a variable with no value, we can assign a null value. Undefined
-                                represents no value, whereas null is a value.
-                                <pre class="bg-pre mt-3">
-                                <code class="text-white">
-                                    var a;
-                                    var b= null;  
-                                </code>
-                            </pre>
-                                Here a is undefined, and b is null.
+                                Below are descriptions of two libraries Node.js developers often use: <br>
+                                <li><strong> Express.js : </strong>This flexible web application framework for Node.js offers several features that support mobile and web application development</li>
+                                <li><strong> Mongoose:  </strong>This web application framework for Node.js enables developers to connect their applications to a database.</li>
+                           
                             </div>
                         </div>
                     </div>
@@ -491,48 +478,15 @@ console.log(`my server start on this port ${PORT}`)
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#mvcquestion" aria-expanded="false" aria-controls="mvcquestion">
                                 <span class="question">Q.9</span> <span class="text-size">
-                                    What is Variable Scope in JS ?
+                                    Do you understand what modules are in Node.js? Please explain what they do ?
                                 </span>
                             </button>
                         </h2>
                         <div id="mvcquestion" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                The scope of the variable determines the variable accessibility in a particular
-                                function. <br><br>
-
-                                There are two types of Variable Scopes in javascript: <br>
-                                <li>Local Scope</li>
-                                <li>Global Scope.
-                                </li> <br>
-                                <b>Local Scope: </b> In this scope, the visibility or accessibility of a variable is
-                                limited to a specific function. Let’s understand it with an example:
-                                <pre class="bg-pre mt-3">
-                                <code class="text-white">
-                                    function ninjas() {
-                                        var course = "Web Development";  // course is limited to ninjas because it is a local variable
-                                      }
-                                      function dev()
-                                      {
-                                      //dev cannot access the course variable because it is local to the ninjas() function
-                                      }
-                                </code>
-                            </pre> <br>
-
-                                <b> Global Scope:</b> We define a variable outside the function accessible for all other
-                                functions in this scope. This sets the variable scope global. Let’s understand it with
-                                an example: <br>
-                                <pre class="bg-pre mt-3">
-                                <code class="text-white">
-                                    var course = "Web Development";  // It is a global variable
-                                    function ninjas() {
-                                    var getninjas = course;
-                                    }
-                                    function dev()
-                                    {
-                                    var getninjas = course;
-                                    }
-                                </code>
-                            </pre>
+                          <li>Node.js modules are similar to JavaScript libraries</li>
+                          <li>Developers can include them in a Node.js application if they want to use specific functions</li>
+                          <li>Programmers should use the require() function and add the module’s name in the parentheses to include modules in the application</li>
 
                             </div>
                         </div>
