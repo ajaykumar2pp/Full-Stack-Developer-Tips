@@ -1,97 +1,96 @@
-a{
-    text-decoration: none;
+/* **************************** Global Styles **************************** */
+a {
+   text-decoration: none;
 }
-h3{
-    color: rgb(214, 52, 52);
+
+h3 {
+   color: rgb(214, 52, 52);
 }
+
+/* **************************** Button Styles **************************** */
 #copy-btn {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  /* **************************** */
-  #copy-btn {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  #copy-input {
-    display: none;
-  }
-  
-
-/* ************************ Bank Details  ********************************** */
-.bank-text{
-
-  margin-left: 20px;
-  font-size: 20px;
-  font-weight: 500;
-}
-.internship{
-  color: #181b38;
-  cursor: pointer;
-  
-}
-.box{
-  background-color: rgb(242, 242, 252);
-  height: 90vh;
- 
-}
-.bank-name{
-     margin-top: 100px;
-  font-weight: 700;
-  color: #181b38;
-  font-size: 70px;
-  margin-left: 100px;
-}
-.bank-web{
-
-  font-weight: 700;
-  color: #181b38;
-  font-size: 70px;
-  margin-left: 100px;
-}
-.bank-img{
-  margin-top: 50px;
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 8px 16px;
+   text-align: center;
+   display: inline-block;
+   font-size: 14px;
+   margin-bottom: 10px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   /* Smooth hover effect */
 }
 
+#copy-btn:hover {
+   background-color: #45a049;
+}
 
-/* ************  Text Glitch * */
+#copy-input {
+   display: none;
+}
 
+/* **************************** Bank Details **************************** */
+.bank-text {
+   margin-left: 20px;
+   font-size: 20px;
+   font-weight: 500;
+}
 
+.internship {
+   color: #181b38;
+   cursor: pointer;
+}
+
+.box {
+   background-color: rgb(242, 242, 252);
+   height: 90vh;
+   padding: 20px;
+   border-radius: 0px;
+}
+
+/* **************************** Text Styling **************************** */
+.bank-name,
+.bank-web {
+   margin-top: 50px;
+   font-weight: 700;
+   color: #181b38;
+   font-size: 50px;
+   margin-left: 20px;
+   text-align: center;
+}
+
+.bank-img {
+   border-radius: 10px;
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+   transition: transform 0.3s ease-in-out;
+}
+
+.bank-img:hover {
+   transform: scale(1.05);
+}
+
+/* **************************** Glitch Effect **************************** */
 .glitch-wrapper {
-   width: 100%;
-   height: 100%;
    display: flex;
    align-items: center;
    justify-content: center;
    text-align: center;
    background-color: #222;
+   height: 100%;
+   padding: 20px;
 }
 
 .glitch {
    position: relative;
-   font-size: 80px;
+   font-size: 50px;
    font-weight: 700;
    line-height: 1.2;
    color: #fff;
    letter-spacing: 5px;
    z-index: 1;
+   margin: 0 auto;
+   display: inline-block;
 }
 
 .glitch:before,
@@ -137,7 +136,7 @@ h3{
       transform: translate(3px, -3px);
    }
 
-   to {
+   100% {
       transform: translate(0);
    }
 }
